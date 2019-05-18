@@ -1,6 +1,6 @@
 # ST-MetaNet: Urban Traffic Prediction from Spatio-Temporal Data  Using Deep Meta Learning
 
-[Overview of ST-MetaNet](overview.pdf)
+![Overview of ST-MetaNet](overview.pdf)
 
 This is the MXNet implementation of ST-MetaNet in the following paper:
 
@@ -48,7 +48,7 @@ Unzip the data files in:
 
 Given the flow prediction task as example (the traffic prediction task is exactly the same as the flow prediction task):
 
-1. `cd flow-prediction/`
+1. **cd flow-prediction/**.
 2. The settings of the models are in the folder `src/model_setting`, saved as yaml format. Three models are provided: `seq2seq`, `gat-seq2seq`, and `st-metanet`. Other baselines refers to [DCRNN](https://github.com/liyaguang/DCRNN) and [ST-ResNet](https://github.com/lucktroy/DeepST/tree/master/scripts/papers/AAAI17), respectively.
 3. All trained model will be saved in `param/`. There are two types of files in this folder:
    1. `model.yaml`: the model training log (the result on evaluation dataset of each epoch). This file records the number of the best epoch for the model.
