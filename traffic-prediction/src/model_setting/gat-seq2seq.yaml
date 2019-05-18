@@ -1,0 +1,37 @@
+---
+seed: 1024
+
+dataset:
+  input_dim: 9
+  output_dim: 1
+  input_len: 12
+  output_len: 12
+  n_neighbors: 8
+  train_prop: 0.7
+  eval_prop: 0.1
+  dataloader: dataloader_all_sensors_seq2seq
+
+model:
+  name: gat-seq2seq
+  type: seq2seq
+
+  geo_hiddens: [32,32]
+  rnn_type: [MyGRUCell, MyGRUCell]
+  rnn_hiddens: [64, 64]
+  graph_type: [GAT, None]
+
+training:
+  batch_size: 32
+
+  wd: 0
+  lr: 0.01
+  lr_decay_step: 7020
+  lr_decay_factor: 0.1
+  lr_min: 0.000002
+  clip_gradient: 5
+
+  use_sampling: True
+  cl_decay_steps: 2000
+
+  early_stop_metric: rmse
+  early_stop_epoch: 50
