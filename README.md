@@ -50,7 +50,7 @@ Unzip the data files in:
 
 ### Description of Flow Data
 
-The flow data is collected from $32 \times 32$ grids from Beijing city.
+The flow data is collected from 32x32 grids from Beijing city.
 
 - BJ_FEATURE.h5: the shape of data is (32, 32, 989), which indicates `(row, colume, feature_id)`. This data represents the node feature for each grid. It consists of POI features and road features saved in BJ_POI.h5 and BJ_ROAD.h5, respectively. 
 - BJ_FLOW.h5: the shape of data is (150, 24, 32, 32, 2), which indicates `(date, hour, row, colume, flow_type)`. The `flow_type` represents inflow or outflow of the region. 
