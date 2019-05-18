@@ -33,7 +33,7 @@ Dependency can be installed using the following command:
 
 `pip install -r requirements.txt`
 
-After that, change the backend deeplearning framework for dgl:
+After that, change the backend deep learning framework for dgl:
 ```bash
 echo 'export DGLBACKEND=mxnet' >> ~/.bashrc
 . ~/.bashrc
