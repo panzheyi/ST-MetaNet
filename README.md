@@ -47,7 +47,21 @@ Unzip the data files in:
 
 - `flow-prediction/data.zip`
 - `traffic-prediction/data.zip` (the data is pre-processed in repository [DCRNN](https://github.com/liyaguang/DCRNN))
-  
+
+### Description of Flow Data
+
+The flow data is collected from $32 \times 32$ grids from Beijing city.
+
+- BJ_FEATURE.h5: the shape of data is (32, 32, 989), which indicates `(row, colume, feature_id)`. This data represents the node feature for each grid. It consists of POI features and road features saved in BJ_POI.h5 and BJ_ROAD.h5, respectively. 
+- BJ_FLOW.h5: the shape of data is (150, 24, 32, 32, 2), which indicates `(date, hour, row, colume, flow_type)`. The `flow_type` represents inflow or outflow of the region. 
+- BJ_GRAPH.h5: the shape is (1024, 1024, 32), which indicates `(grid_1, grid_2, feature_id)`. This data represents the edge feature from grid_1 to grid_2.
+- BJ_POI.h5: POI features for each grid. This data is the intermediate output of preprocessing stage (not used in the model training & testing). 
+- BJ_ROAD.h5: Road features for each grid. This data is the intermediate output of preprocessing stage (not used in the model training & testing). . 
+
+### Description of Traffic Data
+
+The description please refers to the repository of [DCRNN](https://github.com/liyaguang/DCRNN).
+
 ---
 
 ## Model Training & Testing
