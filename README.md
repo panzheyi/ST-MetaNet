@@ -33,6 +33,12 @@ Dependency can be installed using the following command:
 
 `pip install -r requirements.txt`
 
+After that, change the backend deeplearning framework for dgl:
+```bash
+echo 'export DGLBACKEND=mxnet' >> ~/.bashrc
+. ~/.bashrc
+```
+
 ---
 
 ## Data Preparation
@@ -40,7 +46,7 @@ Dependency can be installed using the following command:
 Unzip the data files in:
 
 - `flow-prediction/data.zip`
-- `traffic-prediction/data.zip`
+- `traffic-prediction/data.zip` (the data is pre-processed in repository [DCRNN](https://github.com/liyaguang/DCRNN))
   
 ---
 
