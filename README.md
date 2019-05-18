@@ -4,7 +4,7 @@
 
 This is the MXNet implementation of ST-MetaNet in the following paper:
 
-- Zheyi Pan, Yuxuan Liang, Weifeng Wang, Yong Yu, Yu Zheng, and Junbo Zhang. Urban Traffic Prediction from Spatio-Temporal Data Using Deep Meta Learning. 2019. Urban Traffic Prediction from Spatio-Temporal Data Using
+- Zheyi Pan, Yuxuan Liang, Weifeng Wang, Yong Yu, Yu Zheng, and Junbo Zhang. [Urban Traffic Prediction from Spatio-Temporal Data Using Deep Meta Learning](https://www.researchgate.net/publication/333186315_Urban_Traffic_Prediction_from_Spatio-Temporal_Data_Using_Deep_Meta_Learning). 2019. Urban Traffic Prediction from Spatio-Temporal Data Using
 Deep Meta Learning. In The 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD'19), August 4–8, 2019, Anchorage, AK, USA.
 
 ---
