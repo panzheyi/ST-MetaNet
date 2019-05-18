@@ -35,8 +35,11 @@ Dependency can be installed using the following command:
 
 ## Data Preparation
 
+Unzip the data files in:
 
-
+- `flow-prediction/data.zip`
+- `traffic-prediction/data.zip`
+  
 ---
 
 ## Model Training & Testing
