@@ -1,0 +1,8 @@
+scipy == 1.2.1
+numpy == 1.16.3
+pandas == 0.24.2
+mxnet-cu90 == 1.5.0b20190108
+dgl == 0.2
+tables == 3.5.1
+pymal
+h5py
